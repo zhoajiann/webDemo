@@ -157,7 +157,7 @@ body{
 .chaoshiarea{
 	float: left;
 	position: relative;
-	top: 40px;
+	top: 35px;
 	z-index: 11;
 	margin-top: -15px;
 	max-width: 464px;
@@ -167,7 +167,7 @@ body{
 .chaoshiarea select{
 	color: #999;
 	position: relative;
-	padding: 6px 15px;
+	padding: 8px 6px;
 	border: 1px solid #30b30e;
 	line-height: 1.5;
 	margin-top: -100px;
@@ -210,12 +210,12 @@ body{
 }
 #i1{
 	margin-top: 5px;
-	width:250px;
+	width:220px;
 	height:36px;
 	border:2px solid #30b30e;
 	color:#d2d2d2;
 	position:absolute;
-	right:500px;
+	right:580px;
 }
 #i1:focus{
 	text-align:initial;
@@ -231,7 +231,7 @@ body{
 	background-color:#30b30e;
 	border:none;
 	position:absolute;
-	right:415px; 
+	right:495px; 
 	cursor: pointer;
 } 
 .backdiv{
