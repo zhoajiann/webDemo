@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tmallDemo</title>
+	<link rel="stylesheet" type="text/css" href="css/tmallDemoCss.css">
+</head>
+<body>
+
+<!-- 最上边的首页登录 -->
+<div class="loginBox">
+	<span>天猫首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;喵，欢迎来到天猫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;免费注册</span>
+	<span>我的淘宝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收藏夹&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;手机版&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;淘宝网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商家支持&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+
+</div>
+
+<!-- logo及搜索框 -->
+<div class="searchBox">
+	<img src="imgs/TmallLogo.png">
+	<div class="search">
+		<input type="text" name="" value="搜索产品">
+		<p>搜索</p>
+	</div>
+</div>
+<div class="firstBox">
+	<!-- 左边的导航栏 -->
+	<div class="leftBanner">
+		<ul class="leftBannnerBox" >
+			<li>
+				<p>所有产品分类</p>
+			</li>
+			<li num = "1">
+				<p>进口食品</p>
+				<p>牛奶 零食 饼干</p>
+			</li>
+			<li num = "2">
+				<p>食品饮料</p>
+				<p>牛奶 坚果 饼干</p>
+			</li>
+			<li num = "3">
+				<p>粮油副食</p>
+				<p>油 大米 调料</p>
+			</li>
+			<li num = "4">
+				<p>美容洗护</p>
+				<p>美发 沐浴 牙膏</p>
+			</li>
+			<li num = "5">
+				<p>家居家电</p>
+				<p>毛巾 家电 衣架</p>
+			</li>
+			<li num = "6">
+				<p>家庭清洁</p>
+				<p>纸 洗衣 垃圾袋</p>
+			</li>
+			<li num = "7">
+				<p>母婴用品</p>
+				<p>奶粉 湿巾 玩具</p>
+			</li>
+			<li style="background: #ddd">
+				<p>生活服务</p>
+				<p style="color: #aaa;font-size: 12px;">转账 充话费 点券</p>
+			</li>
+
+		</ul>
+	</div>
+
+	<!-- 购物车的改变 -->
+	<div class="shoppingCart">
+		<ul id="shoppingCartText">
+			<li><p>首页</p></li>
+			<li><p>企业采购</p></li>
+			<li><p>翻盘</p></li>
+		</ul>
+		<div id="shoppingCartDiv">
+			<div>
+				<p>我的购物车</p>
+			</div>
+			<div>
+				<p>共0件商品，共0元</p>
+				<div style="height: 20px;"></div>
+				<a href="#"><button style="width: 200px;height: 50px;color: #a11;">去购物车</button></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 轮播图  + 下边的小图片-->
+	<div class = "carouselContainer" >
+		<div class = "carouselBox">
+			<div class="slider" id="slider">
+				<div class="slide"><img src="imgs/Carousel_5.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_1.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_2.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_3.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_4.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_5.jpg"></div>
+				<div class="slide"><img src="imgs/Carousel_1.jpg"></div>
+			</div>
+			<span id="left"><</span>
+			<span id="right">></span>
+			<ul class="nav" id="nav">
+				<li class="active">&nbsp;1</li>
+				<li>&nbsp;2</li>
+				<li>&nbsp;3</li>
+				<li>&nbsp;4</li>
+				<li>&nbsp;5</li>
+			</ul>
+		</div>
+		<!-- 轮播图下边的小图片 -->
+		<div class = "carouselBottom">
+			<ul id="carouselBottomImgs">
+				<li><img src="imgs/list_4.jpg"></li>		
+				<li><img src="imgs/list_5.jpg"></li>		
+				<li><img src="imgs/list_6.jpg"></li>		
+				<li><img src="imgs/list_1.jpg"></li>		
+				<li><img src="imgs/list_2.jpg"></li>		
+				<li><img src="imgs/list_3.jpg"></li>		
+						
+			</ul>
+		</div>
+<!-- 		<div style="width:500px;height: 500px;background: red;position:fixed;left:0px;top:0px;">
+				
+		</div> -->
+	</div>
+	<!-- 轮播图右边的图片 -->
+	<div class = "carouselRight">
+		<img src="imgs/leftImg_1.jpg">
+		<img src="imgs/leftImg_2.jpg">
+		<img src="imgs/leftImg_3.jpg">
+	</div>	
+</div>
+</body>
+<script type="text/javascript" src = "JavaScript/tmallDemoJs.js"></script>
+</html>

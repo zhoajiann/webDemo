@@ -1,0 +1,272 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+
+/* 最上边的登录条 */
+.loginBox{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background: #ccc;
+	position: relative;
+}
+.loginBox span:first-child{
+	color: #999;
+	position: absolute;
+	left: 200px;
+}
+
+.loginBox span:last-child{
+	color: #999;
+	position: absolute;
+	right: 250px;
+}
+
+/* logo＋搜索 */
+.searchBox{
+	width:1200px;
+	height: 120px;
+	line-height: 120px;
+	margin: 0 auto;
+}
+.searchBox img{
+	float: left;
+}
+.search{
+	width: 600px;
+	height: 52px;
+	line-height: 50px;
+	background: #1a1;
+	display: inline-block;
+}
+.search input{
+	width: 500px;
+	height: 41px;
+	margin-left: 3px;
+	display: inline-block;
+}
+.search p{
+	height: 50px;
+	margin-left: 20px;
+	display: inline-block;
+	color:white;
+}
+
+
+/* 整个下边大盒子 */
+.firstBox{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+}
+/* 左边的导航栏 */
+.leftBanner{
+	width: 140px;
+	height: 600px;
+	float: left;
+	border-left: #ddd 1px solid;
+}
+.leftBanner li{
+	width: 140px;
+	height: 70px;
+	line-height: 70px;
+	margin: 0 auto;
+	border-bottom: #ddd 1px solid;
+}
+.leftBanner li:first-child{
+	height: 28px;
+	line-height: 28px;
+	background: black;
+	border-top: #ddd 1px solid;
+}
+.leftBanner p{
+	width: 100px;
+	margin: 0 auto;
+}
+.leftBanner li p:first-child{
+	color: black;
+	height: 16px;
+	font-size: 16px;
+}
+.leftBanner li:first-child p{
+	color: white;
+	font-size: 14px;
+}
+/* 有购物车的那一行 */
+.shoppingCart{
+	width:1000px;
+	height: 30px;
+	float: left;
+	position: relative;
+}
+.shoppingCart ul{
+	float: left;
+}
+.shoppingCart li{
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	cursor: pointer;
+	background-color: white;
+	float: left;
+	text-align: center;
+}
+
+/* 购物车的红格子 */
+#shoppingCartDiv{
+	float: right;
+	margin-right: 4px;
+}
+#shoppingCartDiv div:first-child{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: #a11;
+}
+#shoppingCartDiv div:last-child{
+	width: 200px;
+	height: 150px;
+	background: #aaa;
+	opacity: 0.9;
+	display: none;
+	text-align: center;
+}
+
+
+/* 轮播图＋轮播图下边的图 */
+
+.carouselContainer{
+	width: 796px;
+	height: 565px;
+	float: left;
+	/* position: relative; */
+}
+
+
+/* 轮播图 */
+.carouselBox{
+	width: 795px;
+	height: 270px;
+	float: left;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 5565px;
+	height: 270px;
+	position: absolute;
+	left: -795px;
+
+}
+.slider img{
+	width:795px;
+}
+.slide{
+	width:795px;
+	overflow: hidden;
+	float: left;
+	overflow: hidden;
+}
+/* 轮播图上边的箭头 */
+.carouselBox>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	top: 100px;
+	line-height: 50px;
+	background-color: #111;
+	font-size: 30px;
+	position: absolute;
+	opacity: 1;
+}
+#left{
+	left: 30px;
+}
+#right{
+	right: 30px;
+}
+/* 轮播图上边的图片编号 */
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 20px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+}
+.nav .active{
+	background: #a11;
+}
+
+
+
+/* 轮播图下边的图片 */
+.carouselBottom{
+	width: 795px;
+	height: 260px;
+	float: left;
+	padding-left: 2px;
+}
+.carouselBottom li{
+	width: 260px;
+	height: 130px;
+	margin-left: 4px;
+	margin-top: 10px;
+	float: left;
+	overflow: hidden;
+
+}
+.carouselBottom li img{
+	width: 100%;
+	height: 100%;
+	line-height: 130px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+/* 轮播图右边的图片 */
+.carouselRight{
+	width: 200px;
+	height: 565px;
+	float: left;
+	overflow: hidden;
+}
+.carouselRight img{
+	width: 100%;
+	float: left;
+}
+
+.hiddenDiv{
+	width: 997px;
+	height: 280px;
+	border: #a11 2px solid;
+	background: white;
+	z-index: 1;
+	position: absolute;
+	left: 140px;
+	top: 0px;
+}
+.pDiv{
+	height: 70px;
+	line-height: 70px;
+	margin: 0 auto;
+	color: #999;
+	margin-left: 50px;
+	cursor: pointer;
+}
