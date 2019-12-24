@@ -210,12 +210,12 @@ body{
 }
 #i1{
 	margin-top: 5px;
-	width:220px;
+	width:250px;
 	height:36px;
 	border:2px solid #30b30e;
 	color:#d2d2d2;
 	position:absolute;
-	right:580px;
+	right:550px;
 }
 #i1:focus{
 	text-align:initial;
@@ -231,7 +231,7 @@ body{
 	background-color:#30b30e;
 	border:none;
 	position:absolute;
-	right:495px; 
+	right:465px; 
 	cursor: pointer;
 } 
 .backdiv{
