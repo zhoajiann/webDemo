@@ -1,0 +1,75 @@
+/*
+* @Author: Administrator
+* @Date:   2019-12-21 10:54:29
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-12-21 17:24:07
+*/
+* {
+	padding: 0;
+	margin: 0;
+}
+.header1{
+	width: 1200px;
+	margin:auto auto ;
+	margin-top: 5px;
+}
+.header2{
+	width: 150px;
+	height: 100px;
+}
+.tit{
+	display: inline-block;
+	float: right;
+	width: 480px;
+	height: 15px;
+}
+.tit>p{
+	display: inline-block;
+	margin-left: 110px;
+}
+.container{
+	width:1200px ;
+	height: 1100px;
+}
+.container>div>div{
+	height: 100px;
+	width: 500px;
+	margin-top:15px;
+	margin-left: 35px;
+	position: relative;
+}
+.sty1{
+	display: inline-block;
+	height: 20px;
+	width: 300px;
+	margin-top: -6px;
+	margin-left: 20px;
+	position: absolute;
+}
+.money{
+	position: absolute;
+	display: inline-block;
+	width: 480px;
+	height: 15px;
+	margin-left: 570px;
+}
+.money>p{
+	display: inline-block;
+	margin-left: 110px;
+}
+.ender{
+	width: 1200px;
+	height:50px ;
+	margin-top:5px;
+	position:fixed;
+	left:150px; 
+	bottom:0px;
+	background-color: #D3D3D3;
+}
+.ender>p{
+	margin-top:12px;
+	display: inline-block;
+	float: right;
+	margin-left: 80px;
+}
+

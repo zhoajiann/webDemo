@@ -250,6 +250,7 @@ ul,li{
 .carouselRight img{
 	width: 100%;
 	float: left;
+	cursor: pointer;
 }
 
 .hiddenDiv{
