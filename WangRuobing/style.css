@@ -1,0 +1,231 @@
+/*
+* @Author: dell
+* @Date:   2019-12-22 14:34:23
+* @Last Modified by:   dell
+* @Last Modified time: 2019-12-24 10:41:03
+*/
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+ul,li,ol{
+	list-style: none;
+}
+.top{
+	height: 30px;
+	width: auto;
+	margin: 0 auto;
+	line-height: 30px;
+	background-color: 	#F5F5F5;
+}
+.top a{
+	color: 	#A9A9A9;
+	font-family: 宋体;
+	font-size: 13px;
+	text-align: right;
+
+}
+.top a:hover{
+	color: #FF4500;
+	border-bottom: 1px solid #FF4500;
+}
+.top_left{
+	float: left;
+	margin-left: 100px;
+}
+.top_left li{
+	display:inline-block;
+	width: 85px;
+	line-height: 30px;
+}
+.top_right{
+	float: right;
+	margin-right: 100px;
+}
+.top_right li{
+	display: inline-block;
+	width: 55px;
+	line-height: 30px
+}
+.head{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	line-height: 100px;
+}
+.logo{
+	display: inline-block;
+	float: left;
+	margin-left: -300px;
+	margin-top: 20px;
+}
+.more{
+	width: 50px;
+	height: 30px;
+	border: 1px solid #C0C0C0;
+	background-image: url('pics/triangle.png');
+	background-color:#F5F5F5;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.search {
+	display: inline-block;
+	float: right;
+	margin-right: 100px;
+}
+.search input{
+	display: inline-block;
+	width: 500px;
+	height: 40px;
+	border: 2px solid #FF4500;
+	color: #D3D3D3;
+}
+.main{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+	border-top: 2px solid #DCDCDC;
+}
+.goods{
+	width: 500px;
+	height: 550px;
+	border:2px solid #dcdcdc ;
+	border-top: 0;
+}
+.goods img{
+	display: inline-block;
+	float: left;
+	margin-top: -10px;
+	padding-left: 30px;
+}
+.introduction{
+	width: 720px;
+	height: 550px;
+	display: inline-block;
+	float:right;
+	margin-right: -50px;
+	margin-top: -530px;
+}
+.score{
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.score li{
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #F6F5F1;
+	border-top: 5px solid #A52A2A;
+	/* border-bottom: 2px solid #A52A2A; */
+	
+}
+.description{
+	width: 1200px;
+	height: 120px;
+	border: 1px solid #C0C0C0;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.description img{
+	display: inline-block;
+	float: left ;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.detail{
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+}
+.detail li{
+	width: 130px;
+	height: 30px;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+.detail button{
+	cursor: pointer;
+}
+.good{
+	width: 100px;
+	height: 30px;
+	background-color: #F5F5F5;
+	border: 1px solid 	#FF6347;
+	color: #B22222	;
+}
+.bad{
+	width: 110px;
+	height: 30px;
+	background-color: #F5F5F5;
+	border: 1px solid 	#3CB371	;
+	color: #228B22	;
+}
+.pic a:hover{
+	background-color: #F08080;
+	width: 100px;
+	height: 30px;
+	border: 1px solid 	#FF6347;
+	color: #B22222	;
+}
+.pic1 a:hover{
+	background-color: #CCFF99;
+	width: 100px;
+	height: 30px;
+	border: 1px solid 	#3CB371;
+	color: #228B22	;
+}
+.comment{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #F6F5F1;
+	border: 2px solid #A9A9A9;
+}
+.h2{
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	color: #696969;
+	font-size: 24px;
+}
+.giveGrade{
+	display: inline-block;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	/* margin: 0 auto; */
+}
+
+.giveGrade img{
+	margin: 10px 10px;
+	cursor: pointer;
+}
+.giveGrade form{
+	display: inline-block;
+	float: left;
+	/* margin-top: 200px; */
+	margin-left: -100px;
+}
+#txt{
+	width: 600px;
+	height: 300px;
+	
+}
+.btn{
+	width: 75px;
+	height: 22px;
+	background:url('pics/sanjiao.png') no-repeat right center;
+	float: right;
+	margin: 10px;
+	cursor: pointer;
+}

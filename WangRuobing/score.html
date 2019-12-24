@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>评分</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="top">
+		<div class="top_left">
+			<ul>
+				<li style="background-image: url(pics/home.PNG);background-repeat: no-repeat;background-position: left;"><a style="display: inline-block;margin-left: 15px;" id="chaolianjie">天猫首页</a></li>
+				<li style="background-image: url(pics/coin.PNG);background-repeat: no-repeat;background-position: right;"><a style="display: inline-block;margin-right: 15px" id="chaolianjie">Hi，啦啦啦</a></li>
+				<li><a id="chaolianjie">积分<span style="font-weight: bold;font-size: 16px;color: #666666">1329</span></a></li>
+				<li><a id="chaolianjie">退出</a></li>
+			</ul>
+		</div>
+		<div class="top_right">
+			<ul>
+				<li style="width:65px;background-image: url(pics/triangle.png);background-repeat: no-repeat;background-position: right;"><a id="chaolianjie">我的淘宝</a></li>
+				<li style="width: 100px; background-image: url(pics/heart.PNG);background-repeat: no-repeat;background-position: left;"><a style="display: inline-block;margin-left: 20px" id="chaolianjie">我关注的品牌</a></li>
+				<li style="width: 70px; background-image:url(pics/cart.PNG);background-repeat: no-repeat;background-position: left;"><a style="display: inline-block;margin-left: 20px" id="chaolianjie">购物车</a></li>
+				<li style="background-image: url(pics/triangle.png);background-repeat: no-repeat;background-position: right;"><a id="chaolianjie">收藏夹</a></li>
+				<li><a id="chaolianjie">| 淘宝网</a></li>
+				<li><a id="chaolianjie">企业购</a></li>
+				<li style="width:65px;background-image: url(pics/triangle.png);background-repeat: no-repeat;background-position: right;"><a id="chaolianjie">商家支持</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="head">
+		<div class="logo">
+			<a href="https://www.tmall.com/"><img src="pics/logo.PNG"></a>
+			<a href="https://www.tmall.com/" class="more" id="more">&nbsp&nbsp更多&nbsp&nbsp&nbsp </a>
+		</div>
+		<div class="search">
+		<form>
+			<input type="text" name="search" class="serchBox" value="搜索 天猫商品/店铺/品牌">
+			<a><input type="button" name="search" class="searchButton" value="搜索" style="width: 100px; background-color:#FF4500;font-size: 20px;color: white;cursor: pointer;"></a>
+		</form>			 
+		</div>
+	</div>
+	<div class="main">
+		<div class="goods"> 
+			<img src="pics/goods.jpg">
+		</div>
+		<div class="introduction">
+			<img src="pics/introduction.png">
+		</div>
+	</div>
+	<div class="score">
+		<ul><li><span>累积评价</span><span style="color: #00008B;font-weight: bold;">1256</span></li></ul>
+		<hr style="height:10px;border:none;background-color: #F6F5F1;">
+	</div>
+	<div class="description">
+		<div class="grades">
+			<img src="pics/grades.png">
+			<div style="float:left;margin-top:10px;margin-left:20px;width:1px;height:100px;background:darkgray;"></div> 
+		</div>
+		<div class="detail">
+			<ul>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">味道好闻(1116)</button></a></li>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">很划算(452)</button></a></li>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">包装很好(673)</button></a></li>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">质量很好(890)</button></a></li>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">不会油油的(151)</button></a></li>
+				<li class="pic"><a href="" class="pic" id="pic"><button class="good">物流很快(56)</button></a></li>
+				
+			</ul>
+			<ul>
+				<li class="pic1"><a href="" class="pic1"><button class="bad">味道不好闻(108)</button></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="comment">
+		<p class="h2">其他买家,需要你的建议哦！</p>
+		<div class="giveGrade">
+			<p>请对商品进行评分:</p>
+			<img src="pics/star0.png" title="1" name="0" id="img" class="star"/>
+            <img src="pics/star0.png" title="2" name="1" id="img" class="star"/>
+            <img src="pics/star0.png" title="3" name="2" id="img" class="star"/>
+            <img src="pics/star0.png" title="4" name="3" id="img" class="star"/>
+            <img src="pics/star0.png" title="5" name="4" id="img" class="star"/>
+            <br/>
+            <form>
+                <textarea cols="40" rows="8" value="" id='txt'></textarea>
+                <br/>
+                <button class="btn" id="btn">公开评论</button>
+            </form>
+		</div>
+		<div class="com">
+			
+        </div>    
+	</div>
+</body>
+<script type="text/javascript" src="star.js"></script>
+<script type="text/javascript">
+	// var chaolianjie = document.getElementById("chaolianjie");
+	var btn = document.getElementById("btn");
+	var pic = document.getElementById("pic");
+
+	btn.onclick = function(){
+		alert("评价成功！");
+	};
+
+	pic.onmouseover = function(){
+		pic.style.backgroundColor = "#F08080";
+	}
+</script>
+</html>
