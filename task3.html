@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="demo.css">
+	<style>
+		.color{
+			width: 1200px;
+			height: 130px;
+			border: gray solid 1px;
+			margin-top: 40px;
+			background-color: #F8F8F8;
+		}
+	</style>
+</head>
+<body>
+	<div class="header1">
+		<div class="header2">
+			<img src="imagedemo/tao.png">
+		</div>
+		<div>
+			<dl>
+				<dt>
+					<input type="checkbox" id="checkAll" /><label>全选</label>
+					<div class="tit">
+						<p>单价</p>
+						<p>数量</p>
+						<p>金额</p>
+					</div>
+				</dt>
+				<dd class="container">
+					<div class="color">
+						<div>
+							<input type="checkbox" name="item" id="69" />
+							<img src="imagedemo/wu1.png">
+							<div class="sty1">
+							<a href="#" style="color: black;text-decoration:none;font-size:13px ;">加绒打底裤女外穿秋冬季高腰灰色羊羔绒裤子女加厚保暖暖一体棉裤</a>
+							</div>
+							<div class="money">
+								<p>$69.00</p>
+								<p>1</p>
+								<p>69.00</p>
+							</div>
+					    </div>
+					</div>
+					<div class="color">
+						<div>
+							<input type="checkbox" name="item" id="199.99" />
+							<img src="imagedemo/wu2.png">
+							<div class="sty1">
+							<a href="#" style="color: black;text-decoration:none;font-size:13px ;">外贸出口尾单女装剪标大牌清仓尾货皮毛一体软糯羊羔绒大衣短外套 </a>
+							</div>
+							<div class="money">
+								<p>$199.99</p>
+								<p>1</p>
+								<p>$199.99</p>
+							</div>
+						</div>
+					</div>
+					<div class="color">
+						<div>
+							<input type="checkbox" name="item" id="238" />
+							<img src="imagedemo/wu3.png">
+							<div class="sty1">
+							<a href="#" style="color: black;text-decoration:none;font-size:13px ;">小个子格子毛呢外套女秋冬2019年新品仿羊羔绒新款呢子流行大衣厚 </a>
+							</div>
+							<div class="money">
+								<p>$238.00</p>
+								<p>1</p>
+								<p>$238.00</p>
+							</div>
+						</div>
+					</div>
+					<div class="color">
+						<div>
+							<input type="checkbox" name="item" id="53.98"/>
+							<img src="imagedemo/wu4.png">
+							<div class="sty1">
+							<a href="#" style="color: black;text-decoration:none;font-size:13px ;">官方旗舰店橘朵单色腮红裸妆提亮自然细腻细闪元气少女橘色橙色17  </a>
+							</div>
+							<div class="money">
+								<p>$53.98</p>
+								<p>1</p>
+								<p>$53.98</p>
+							</div>
+						</div>
+					</div>
+					<div class="color">
+						<div>
+							<input type="checkbox" name="item" id="869"/>
+							<img src="imagedemo/wu5.png">
+							<div class="sty1">
+							<a href="#" style="color: black;text-decoration:none;font-size:13px ;">抖音同款网红吉他初学者学生用民谣面单板电箱木吉他旅行男女41寸</a>
+							</div>
+							<div class="money">
+								<p>$869.00</p>
+								<p>1</p>
+								<p>$869.00</p>
+							</div>
+						</div>
+					</div>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="ender">
+		<div style="margin-top:13px;margin-left:10px;display:inline-block;">
+			<input type="checkbox" id="checkAll" /><label>全选</label>
+		</div>
+		<p>
+		<label>合计（不含运费）：</label><input type = "text" class = "timer1" style="width :75px;height:20px;color:red;font-size:20px;text-align:center;" value = "0.00"/>
+		</p>
+		<p>
+		<label>已选商品</label><input type = "text" class = "timer2"  style="width :40px;height:20px;color:red;font-size:20px;text-align:center;" value = "0"/><label>件</label>
+		</p>
+	</div>
+</body>
+	<script>
+		function getStyle(obj,style) {  
+			if(obj.currentStyle) {  
+		    	return obj.currentStyle[style]; //仅限 IE8 
+			} 
+			else {  
+		    	return getComputedStyle(obj)[style];  //IE8不能使用
+			}  
+		}
+		var inpus=document.getElementsByTagName("input");
+		var label1=document.getElementsByTagName("label")[0];
+		var color=document.getElementsByClassName("color");
+		var a=document.getElementsByTagName("a");
+		inpus[0].onclick = function(){
+				for(var i=1;i<inpus.length;i++){
+					inpus[i].checked = inpus[0].checked;
+				}
+				if(inpus[0].checked){
+					inpus[8].value =inpus.length-4;
+					inpus[7].value=0;
+					for(var j=1;j<inpus.length-3;j++){
+						color[j-1].style.backgroundColor="pink";
+						inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[j].id);
+					}
+				}
+				else{
+					for(var j=1;j<inpus.length-3;j++){
+						color[j-1].style.backgroundColor="#F8F8F8";
+					}
+					inpus[8].value =0;
+					inpus[7].value = 0.00;
+				}
+			}
+		inpus[6].onclick = function(){
+			for(var i=0;i<inpus.length;i++){
+				inpus[i].checked = inpus[6].checked;
+			}
+			if(inpus[6].checked){
+					inpus[8].value =inpus.length-4;
+					inpus[7].value = 0;
+					for(var j=1;j<inpus.length-3;j++){
+						color[j-1].style.backgroundColor="pink";
+						inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[j].id);
+					}
+			}
+			else{
+				for(var j=1;j<inpus.length-3;j++){
+						color[j-1].style.backgroundColor="#F8F8F8";
+				}
+				inpus[8].value =0;
+				inpus[7].value = 0.00;
+			}
+		}
+		for(var i=0;i<a.length;i++){
+			a[i].onmouseover=function()
+			{
+				this.style.color='red';
+			}
+			a[i].onmouseout=function()
+			{
+				this.style.color='black';
+			}
+		}
+		// for(var i=1;i<inpus.length;i++){
+		// 	inpus[i].onclick=function(){
+		// 		if(inpus[i].checked){
+		// 			inpus[8].value=parseInt(inpus[8].value)+1;
+		// 		}
+		// 		if(!inpus[i].checked){
+		// 			inpus[8].value=parseInt(inpus[8].value)-1;
+		// 		}
+		// 	}
+		// }
+		inpus[1].onclick=function(){
+			if(inpus[1].checked){
+				color[0].style.backgroundColor="pink";
+				inpus[8].value = parseInt(inpus[8].value)+1;
+				inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[1].id);
+			}
+			if(!inpus[1].checked){
+				color[0].style.backgroundColor="#F8F8F8";
+				inpus[8].value = parseInt(inpus[8].value)-1;
+				inpus[7].value = parseFloat(inpus[7].value)-parseFloat(inpus[1].id);
+			}
+		}
+		inpus[2].onclick=function(){
+			if(inpus[2].checked){
+				color[1].style.backgroundColor="pink";
+				inpus[8].value = parseInt(inpus[8].value)+1;
+				inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[2].id);
+			}
+			if(!inpus[2].checked){
+				color[1].style.backgroundColor="#F8F8F8";
+				inpus[8].value = parseInt(inpus[8].value)-1;
+				inpus[7].value = parseFloat(inpus[7].value)-parseFloat(inpus[2].id);
+			}
+		}
+		inpus[3].onclick=function(){
+			if(inpus[3].checked){
+				color[2].style.backgroundColor="pink";
+				inpus[8].value = parseInt(inpus[8].value)+1;
+				inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[3].id);
+			}
+			if(!inpus[3].checked){
+				color[2].style.backgroundColor="#F8F8F8";
+				inpus[8].value = parseInt(inpus[8].value)-1;
+				inpus[7].value = parseFloat(inpus[7].value)-parseFloat(inpus[3].id);
+			}
+		}
+		inpus[4].onclick=function(){
+			if(inpus[4].checked){
+				color[3].style.backgroundColor="pink";
+				inpus[8].value = parseInt(inpus[8].value)+1;
+				inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[4].id);
+			}
+			if(!inpus[4].checked){
+				color[3].style.backgroundColor="#F8F8F8";
+				inpus[8].value = parseInt(inpus[8].value)-1;
+				inpus[7].value = parseFloat(inpus[7].value)-parseFloat(inpus[4].id);
+			}
+		}
+		inpus[5].onclick=function(){
+			if(inpus[5].checked){
+				color[4].style.backgroundColor="pink";
+				inpus[8].value = parseInt(inpus[8].value)+1;
+				inpus[7].value = parseFloat(inpus[7].value)+parseFloat(inpus[5].id);
+			}
+			if(!inpus[5].checked){
+				color[4].style.backgroundColor="#F8F8F8";
+				inpus[8].value = parseInt(inpus[8].value)-1;
+				inpus[7].value = parseFloat(inpus[7].value)-parseFloat(inpus[5].id);
+			}
+		}
+
+	</script>
+</html>
